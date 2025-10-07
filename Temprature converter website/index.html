@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Temperature Converter</h1>
+        <p>Convert between Celsius, Fahrenheit, and Kelvin</p>
+      </header>
+
+      <div class="converter-card">
+        <div class="input-section">
+          <label for="temperature-input">Enter Temperature:</label>
+          <input
+            type="number"
+            id="temperature-input"
+            placeholder="Enter a number..."
+            step="any"
+          />
+          <div class="error-message" id="error-message"></div>
+        </div>
+
+        <div class="unit-selection">
+          <label for="from-unit">From:</label>
+          <select id="from-unit">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+          </select>
+
+          <label for="to-unit">To:</label>
+          <select id="to-unit">
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="celsius">Celsius (°C)</option>
+            <option value="kelvin">Kelvin (K)</option>
+          </select>
+        </div>
+
+        <button id="convert-btn" class="convert-button">
+          Convert Temperature
+        </button>
+
+        <div class="result-section" id="result-section">
+          <div class="result-display" id="result-display">
+            <!-- Conversion result will appear here -->
+          </div>
+        </div>
+      </div>
+
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>
